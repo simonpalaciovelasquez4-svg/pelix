@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background:#020617 !important;
+}
+
+.navbar-brand{
+    color:#e50914 !important;
+    font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.8)),
+    url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    height:300px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:50px;
+    font-weight:bold;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+/* CARD FORMULARIO */
+
+.card{
+    background:#1e293b;
+    color:white;
+    border:none;
+    border-radius:15px;
+}
+
+.card-header{
+    border-radius:15px 15px 0 0 !important;
+}
+
+.form-control,
+.form-select{
+
+    background:#334155;
+    color:white;
+    border:none;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    background:#475569;
+    color:white;
+    box-shadow:none;
+
+}
+
+.form-control::placeholder{
+    color:#cbd5e1;
+}
+
+/* BOTONES */
+
+.btn-danger{
+
+    background:#e50914;
+    border:none;
+    transition:.3s;
+
+}
+
+.btn-danger:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* TARJETAS */
+
+.movie-card{
+    background:#1e293b;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.4s;
+}
+
+.movie-card:hover{
+    transform:translateY(-8px);
+}
+
+.movie-card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.movie-body{
+    padding:20px;
+}
+
+.movie-body h3{
+    font-size:24px;
+}
+
+.movie-body p{
+    margin-bottom:8px;
+}
+
+.movie-body i{
+    color:gold;
+}
+
+.rating-display{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:10px 0;
+}
+
+.stars{
+    color:#ffc107;
+    letter-spacing:2px;
+}
+
+.acciones{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:15px;
+}
+
+.btn-warning{
+    flex:1;
+}
+
+.btn-danger.eliminar{
+    flex:1;
+}
+
+.sin-peliculas{
+    text-align:center;
+    padding:60px;
+    color:#94a3b8;
+    font-size:22px;
+}
+
+.card .form-label{
+    color:#cbd5e1;
+}
+
+.card .form-control,
+.card .form-select{
+    background:#334155;
+    color:white;
+    border:none;
+}
+
+.card .btn-outline-light{
+    color:#f8fafc;
+    border-color:rgba(248,250,252,.3);
+}
+
+.card .btn-outline-light:hover{
+    color:#020617;
+    background:#f8fafc;
+}
+
+.register-divider{
+    border-top:1px solid rgba(255,255,255,.15);
+    padding-top:16px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+    .hero {
+        height: 260px;
+        padding: 0 20px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .movie-card img {
+        height: 260px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 220px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .movie-card img {
+        height: 220px;
+    }
+
+    .movie-body {
+        padding: 18px;
+    }
+
+    .movie-body h3 {
+        font-size: 20px;
+    }
+
+    .sin-peliculas {
+        padding: 40px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        height: 180px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .movie-card img {
+        height: 180px;
+    }
+
+    .movie-body {
+        padding: 14px;
+    }
+
+    .movie-body h3 {
+        font-size: 18px;
+    }
+
+    .acciones {
+        flex-direction: column;
+    }
+
+    .btn-warning,
+    .btn-danger.eliminar,
+    .btn-outline-light {
+        width: 100%;
+    }
+}
